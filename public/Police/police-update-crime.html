@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INDIAN POLICE</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="onoi-styles-lib.css">
+</head>
+
+<body>
+    <form class="showcase-box">
+        <div id="identity">
+            <h4>AADHAAR No - 4880 4705 2222 &nbsp; &nbsp; <span id="aadhaarno"></span></h4>
+            <h4>Name - Rakesh Sharma <span id="name"></span></h4>
+        </div>
+        <h5>Add New Crime</h5>
+        <div class="add-crime-flex">
+            <label>Crime name <input class="main-inp" type="text"> </label>
+            <label>Section no <input class="main-inp" type="text"> </label>
+            <label>Station Name <input class="main-inp" type="text"> </label>
+        </div>
+        <div id="success-greeting">
+            <i class="far fa-check-circle"></i>
+            <h2>Data Successfully Updated!!!</h2>
+        </div>
+        <div><button class="primary-submit-btn" id="add-crime">ADD</button></div>
+        <h5>Update Crime</h5>
+        <div class="update-crime-flex">
+            <label>Crime name <input class="main-inp" type="text"> </label>
+            <label>Section no <input class="main-inp" type="text"> </label>
+            <label>Crime Status <input class="main-inp" type="text"> </label>
+        </div>
+        <div id="success-greeting">
+            <i class="far fa-check-circle"></i>
+            <h2>Data Successfully Updated!!!</h2>
+        </div>
+        <form>
+            <div><button class="primary-submit-btn" id="update-crime">UPDATE</button></div>
+        </form>
+    </form>
+    <script src="update-crime.js"></script>
+</body>
+
+</html>

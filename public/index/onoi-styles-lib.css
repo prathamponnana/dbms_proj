@@ -1,0 +1,123 @@
+body{
+    background-color: #f2f2f2;
+}
+
+/*-------------TOP HEADER SECTION-------------*/
+.header{
+    text-align: center;
+    margin-top: 30px;
+}
+.header h1{
+    font-weight: 200;
+}
+.header img{
+    height: 100px;
+    width: 100px;
+}
+
+/* -------MAIN 3 DEPT LOGIN SCREEN---------*/
+
+.login-main{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-gap: 10px;
+    max-width: 860px;
+    min-height: 380px;
+    padding: 30px 90px;
+    margin: 50px auto;
+    background-color: #d3d3d3;
+    text-align: center;
+}
+
+.login-main h2{
+    font-size: x-large;
+    font-weight: 100;
+}
+
+.login-main-btn{
+    width: 100%;
+    min-height: 80px;
+ }
+
+.login-main-btn p{
+    font-weight: 100;
+    font-size: 15px;
+}
+
+/* 
+@media (max-width: 500px){
+    body{
+        display: none;
+    }
+} */
+
+.add-crime-flex,
+.update-crime-flex {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+h4 {
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+}
+.showcase-box{
+    display: grid;
+    grid-template-rows: 1fr 0.5fr 0.7fr 1fr 1fr 0.5fr;
+    grid-gap: 30px;
+    max-width: 860px;
+    min-height: 380px;
+    padding: 30px 90px;
+    margin: 50px auto;
+    background-color: #d3d3d3;
+    text-align: center;
+}
+
+#identity{
+    display: flex;
+    justify-content: space-between;
+    background-color: #bebebe;
+    width: 100%;
+    padding: 20px 40px;
+}
+
+.dummy-inp{
+    height: 40px;
+    width: 100px;
+    background-color: #383838;
+    color: #fff;
+ }
+ 
+ .main-inp{
+    height: 40px;
+    width: 200px;
+ }
+ 
+ .primary-submit-btn{
+     background-color: #303030;
+     color: #fff;
+     min-height: 40px;
+     width: 25%;
+     text-align: center;
+ }
+ .primary-submit-btn:hover{
+     background-color: #383838;
+     color: #fff;
+ }
+
+ .input-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+}
+.input-grid-odd :last-child{
+    grid-column-start: 2;
+}
+
+#success-greeting{
+    display: none;
+}
+.far{
+    font-size: 70px;
+}

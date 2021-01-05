@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TRANSPORT DEPARTMENT</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="onoi-styles-lib.css">
+</head>
+<style>
+    .showcase-box {
+        display: grid;
+        grid-template-rows: 0.1fr 0.01fr 0.7fr 0.3fr 0.1fr 0.5fr;
+        grid-gap: 30px;
+        max-width: 860px;
+        min-height: 380px;
+        padding: 30px 90px;
+        margin: 50px auto;
+        background-color: #d3d3d3;
+        text-align: center;
+    }
+</style>
+
+<body>
+    <form class="showcase-box">
+        <div id="identity">
+            <h4>AADHAAR No - 4880 4705 2222 &nbsp; &nbsp; <span id="aadhaarno"></span></h4>
+            <h4>Name - Rakesh Sharma <span id="name"></span></h4>
+        </div>
+        <h5>Add New RC</h5>
+        <div class="input-grid">
+            <label>Vehicle number <input class="main-inp" type="text"> </label>
+            <label>Vehicle name <input class="main-inp" type="text"> </label>
+            <label>Vehicle Colour <input class="main-inp" type="text"> </label>
+            <label>Chasis number <input class="main-inp" type="text"> </label>
+            <label>Engine Number <input class="main-inp" type="text"> </label>
+            <label>Issue Date <input class="main-inp" type="date"> </label>
+            <label>Valid Up To<input class="main-inp" type="date"> </label>
+            <label>Fitness Valid Till<input class="main-inp" type="date"> </label>
+            <label>Insurance Company<input class="main-inp" type="text"> </label>
+            <label>Insurance Number<input class="main-inp" type="text"> </label>
+        </div>
+        <div><button class="primary-submit-btn" type="submit">ADD</button></div>
+
+        <div id="success-greeting">
+            <i class="far fa-check-circle"></i>
+            <h2>Data Successfully Updated!!!</h2>
+        </div>
+
+        <!-- ///////// -->
+        <h5>Update Existing RC</h5>
+        <div class="input-grid input-grid-odd">
+            <label>Vehicle number <input class="main-inp" type="text"> </label>
+            <label>Vehicle name <input class="main-inp" type="text"> </label>
+            <label>Vehicle Colour <input class="main-inp" type="text"> </label>
+            <label>Chasis number <input class="main-inp" type="text"> </label>
+            <label>Engine Number <input class="main-inp" type="text"> </label>
+            <label>Issue Date <input class="main-inp" type="date"> </label>
+            <label>Valid Up To<input class="main-inp" type="date"> </label>
+            <label>Fitness Valid Till<input class="main-inp" type="date"> </label>
+            <label>Insurance Company<input class="main-inp" type="text"> </label>
+            <label>Insurance Number<input class="main-inp" type="text"> </label>
+        </div>
+        <div><button class="primary-submit-btn" type="submit">Update</button></div>
+        <!-- //////////// -->
+    </form>
+    <script src="add-rc.js"></script>
+</body>
+
+</html>

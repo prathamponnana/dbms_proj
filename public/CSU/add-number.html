@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DEPARTMENT OF COMMON SERVICE</title>
+    <link rel="stylesheet" href="onoi-styles-lib.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css" rel="stylesheet">
+</head>
+<style>
+    .showcase-box-csu {
+        display: grid;
+        grid-template-rows: 0.2fr 0.01fr 1fr 0.5fr;
+        grid-gap: 30px;
+        max-width: 860px;
+        min-height: 380px;
+        padding: 30px 90px;
+        margin: 50px auto;
+        background-color: #d3d3d3;
+        text-align: center;
+    }
+</style>
+
+<body>
+    <section class="header">
+        <img src="csu_logo.png" alt="pic">
+        <h1>DEPARTMENT OF COMMON SERVICE</h1>
+    </section>
+    <form class="showcase-box-csu" action="/CSU/add-number.html" method="POST">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe odio in officia est totam odit itaque,
+            repellat aspernatur, architecto velit vitae quaerat harum cumque eius doloremque quod voluptate adipisci
+            tempora.</p>
+        <h5>Enter the Details</h5>
+        <div class="input-grid">
+            <label>Aadhaar number <input class="main-inp" type="text" name="adhnum"> </label>
+            <label>Enter Name <input class="main-inp" type="text" name="name"> </label>
+            <label>Date of Birth <input class="main-inp" type="date" name="dob"> </label>
+            <label> Select Gender <input class="main-inp" type="text" name="gender"> </label>
+            <label>Place of Birth <input class="main-inp" type="text" name="place"> </label>
+            <label>Phone no. <input class="main-inp" type="number" name="phno"> </label>
+        </div>
+        <div id="success-greeting">
+            <i class="far fa-check-circle"></i>
+            <h2>Data Successfully Updated!!!</h2>
+        </div>
+        <div><button class="primary-submit-btn" id="update-aadhaar" type="submit">ADD / UPDATE</button></div>
+    </form>
+    <script src="add-number.js"></script>
+    <script src="../../server.js"></script>
+</body>
+
+</html>
