@@ -6,19 +6,19 @@ const bodyParser = require('body-parser');
 
 const app = express();
 
-// const db = mysql.createConnection({
-//     host:'card-db.c3sguqkrjced.us-east-2.rds.amazonaws.com' ,
-//     user: 'admin' ,
-//     password: 'DBMSboys',
-//     port: '3306',
-//     database: 'card'
-// });
+const db = mysql.createConnection({
+    host:'card-db.c3sguqkrjced.us-east-2.rds.amazonaws.com' ,
+    user: 'admin' ,
+    password: 'DBMSboys',
+    port: '3306',
+    database: 'card'
+});
 
 
-// db.connect((err)=>{
-//     if(err) console.log(err);
-//     console.log('Congratulations. Connection established!!!')
-// });
+db.connect((err)=>{
+    if(err) console.log(err);
+    console.log('Congratulations. Connection established!!!')
+});
 
 // app.get('/test',(req,res) =>{
 //     let sql1 = `insert into person values('cvb',95)`;
@@ -35,7 +35,8 @@ app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static(path.join(__dirname,'public')));
 
 
-app.post('/CSU/add-number.html',(req, res)=>{
+app.post('/api/saveperson',(req, res)=>{
+    console.log(req);
     res.send('Thanks for posting that')
 });
  
