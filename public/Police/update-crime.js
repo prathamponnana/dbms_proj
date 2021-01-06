@@ -1,3 +1,6 @@
+import {abc} from './option-page.js';
+console.log(abc.call());
+
 document.querySelector(".showcase-box").addEventListener("submit", (e) => {
   document.querySelector(".add-crime-flex").style.display = "none";
   document.querySelector(".update-crime-flex").style.display = "none";
