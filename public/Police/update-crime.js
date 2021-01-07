@@ -11,6 +11,8 @@ document.querySelector(".showcase-box").addEventListener("submit", (e) => {
   document.querySelector("#success-greeting").style.display = "block";
   e.preventDefault();
 
+  console.log(e.target);
+
   setTimeout(() => {
     window.location.reload();
   }, 3000);
