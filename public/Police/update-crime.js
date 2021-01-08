@@ -1,5 +1,5 @@
-import {abc} from './option-page.js';
-console.log(abc.call());
+import { adhNo } from "./option-page.js";
+console.log(adhNo());
 
 document.querySelector(".showcase-box").addEventListener("submit", (e) => {
   document.querySelector(".add-crime-flex").style.display = "none";
