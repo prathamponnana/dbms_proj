@@ -6,6 +6,6 @@ document.addEventListener("click", (e) => {
   }
 });
 
-export function adhNo(aadhaarNo) {
+export function adhNo() {
   return aadhaarNo;
 }
