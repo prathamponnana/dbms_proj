@@ -1,11 +1,19 @@
-var aadhaarNo;
-document.addEventListener("click", (e) => {
-  if (e.target.className == "login-main-btn") {
-    aadhaarNo = document.getElementById("aadhaar-no").value;
-    console.log(aadhaarNo);
-  }
-});
+import AadhaarInput from "../aadhaarInp.js";
+import doSomething from "./update-crime.js";
 
-export function adhNo() {
-  return aadhaarNo;
-}
+const aadhaarNoField = document.getElementById("aadhaar-no");
+const optionsBtn = document.querySelector(".login-main-btn");
+
+// adhaarNoField.value = AdhaarInput.getAdhaarNo();
+
+aadhaarNoField.oninput = function (e) {
+  AadhaarInput.setAadhaarNo(e.target.value);
+};
+
+optionsBtn.onclick = function (e) {
+  // e.preventDefault();
+
+  doSomething();
+
+  console.log(AadhaarInput);
+};
