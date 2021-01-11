@@ -1,5 +1,5 @@
 import AadhaarInput from "../aadhaarInp.js";
-import doSomething from "./update-crime.js";
+
 
 const aadhaarNoField = document.getElementById("aadhaar-no");
 const optionsBtn = document.querySelector(".login-main-btn");
@@ -13,7 +13,7 @@ aadhaarNoField.oninput = function (e) {
 optionsBtn.onclick = function (e) {
   // e.preventDefault();
 
-  doSomething();
+//   doSomething();
 
   console.log(AadhaarInput);
 };
