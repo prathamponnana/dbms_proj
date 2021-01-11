@@ -1,5 +1,9 @@
-import { adhNo } from "./option-page.js";
-console.log(adhNo());
+// import { adhNo } from "./option-page.js";
+// console.log(adhNo());
+import AadhaarInput from "../aadhaarInp.js";
+console.log(AadhaarInput);
+const aadhaarNo = AadhaarInput.getAadhaarNo();
+console.log(aadhaarNo);
 
 document.querySelector(".showcase-box").addEventListener("submit", (e) => {
   document.querySelector(".add-crime-flex").style.display = "none";
